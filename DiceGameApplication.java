@@ -18,8 +18,8 @@ public class DiceGameApplication{
         int sum = culclator.Sum(d1.getNumber(), d2.getNumber());
         System.out.println("Total value: " + sum);
 
-        Judge j = new Judge(7);
-        if(j.rum(sum)){
+        Judge judge = new Judge(7);
+        if(judge.rum(sum)){
             System.out.println(name + " won!");
         }
     }
